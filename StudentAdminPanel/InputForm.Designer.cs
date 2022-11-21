@@ -42,12 +42,14 @@
             this.txtGender = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txtUpdate = new System.Windows.Forms.Button();
+            this.txtId = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtMatricNumber
             // 
-            this.txtMatricNumber.Location = new System.Drawing.Point(42, 117);
+            this.txtMatricNumber.Location = new System.Drawing.Point(36, 87);
             this.txtMatricNumber.Name = "txtMatricNumber";
             this.txtMatricNumber.Size = new System.Drawing.Size(277, 23);
             this.txtMatricNumber.TabIndex = 8;
@@ -56,7 +58,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(42, 97);
+            this.label2.Location = new System.Drawing.Point(36, 67);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 15);
             this.label2.TabIndex = 7;
@@ -64,7 +66,7 @@
             // 
             // txtFullname
             // 
-            this.txtFullname.Location = new System.Drawing.Point(42, 57);
+            this.txtFullname.Location = new System.Drawing.Point(36, 27);
             this.txtFullname.Name = "txtFullname";
             this.txtFullname.Size = new System.Drawing.Size(277, 23);
             this.txtFullname.TabIndex = 6;
@@ -74,7 +76,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(42, 38);
+            this.label1.Location = new System.Drawing.Point(36, 8);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(62, 16);
             this.label1.TabIndex = 5;
@@ -82,7 +84,7 @@
             // 
             // txtStateOfOrigin
             // 
-            this.txtStateOfOrigin.Location = new System.Drawing.Point(42, 228);
+            this.txtStateOfOrigin.Location = new System.Drawing.Point(36, 198);
             this.txtStateOfOrigin.Name = "txtStateOfOrigin";
             this.txtStateOfOrigin.Size = new System.Drawing.Size(277, 23);
             this.txtStateOfOrigin.TabIndex = 12;
@@ -91,7 +93,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label4.Location = new System.Drawing.Point(42, 208);
+            this.label4.Location = new System.Drawing.Point(36, 178);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(83, 15);
             this.label4.TabIndex = 11;
@@ -99,7 +101,7 @@
             // 
             // txtAge
             // 
-            this.txtAge.Location = new System.Drawing.Point(42, 168);
+            this.txtAge.Location = new System.Drawing.Point(36, 138);
             this.txtAge.Name = "txtAge";
             this.txtAge.Size = new System.Drawing.Size(277, 23);
             this.txtAge.TabIndex = 10;
@@ -109,7 +111,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label3.Location = new System.Drawing.Point(42, 149);
+            this.label3.Location = new System.Drawing.Point(36, 119);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(32, 16);
             this.label3.TabIndex = 9;
@@ -117,7 +119,7 @@
             // 
             // txtGpa
             // 
-            this.txtGpa.Location = new System.Drawing.Point(42, 280);
+            this.txtGpa.Location = new System.Drawing.Point(36, 250);
             this.txtGpa.Name = "txtGpa";
             this.txtGpa.Size = new System.Drawing.Size(277, 23);
             this.txtGpa.TabIndex = 14;
@@ -126,7 +128,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label5.Location = new System.Drawing.Point(42, 260);
+            this.label5.Location = new System.Drawing.Point(36, 230);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(28, 15);
             this.label5.TabIndex = 13;
@@ -134,9 +136,9 @@
             // 
             // addData
             // 
-            this.addData.Location = new System.Drawing.Point(42, 373);
+            this.addData.Location = new System.Drawing.Point(36, 383);
             this.addData.Name = "addData";
-            this.addData.Size = new System.Drawing.Size(277, 41);
+            this.addData.Size = new System.Drawing.Size(277, 34);
             this.addData.TabIndex = 17;
             this.addData.Text = "Add Data";
             this.addData.UseVisualStyleBackColor = true;
@@ -144,7 +146,7 @@
             // 
             // txtGender
             // 
-            this.txtGender.Location = new System.Drawing.Point(42, 334);
+            this.txtGender.Location = new System.Drawing.Point(36, 304);
             this.txtGender.Name = "txtGender";
             this.txtGender.Size = new System.Drawing.Size(277, 23);
             this.txtGender.TabIndex = 19;
@@ -153,7 +155,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label6.Location = new System.Drawing.Point(42, 314);
+            this.label6.Location = new System.Drawing.Point(36, 284);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(45, 15);
             this.label6.TabIndex = 18;
@@ -162,17 +164,38 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(343, 38);
+            this.dataGridView1.Location = new System.Drawing.Point(343, 27);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(522, 384);
+            this.dataGridView1.Size = new System.Drawing.Size(522, 339);
             this.dataGridView1.TabIndex = 20;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            // 
+            // txtUpdate
+            // 
+            this.txtUpdate.Location = new System.Drawing.Point(36, 433);
+            this.txtUpdate.Name = "txtUpdate";
+            this.txtUpdate.Size = new System.Drawing.Size(277, 34);
+            this.txtUpdate.TabIndex = 21;
+            this.txtUpdate.Text = "Update Data";
+            this.txtUpdate.UseVisualStyleBackColor = true;
+            this.txtUpdate.Click += new System.EventHandler(this.txtUpdate_Click);
+            // 
+            // txtId
+            // 
+            this.txtId.Location = new System.Drawing.Point(36, 343);
+            this.txtId.Name = "txtId";
+            this.txtId.ReadOnly = true;
+            this.txtId.Size = new System.Drawing.Size(277, 23);
+            this.txtId.TabIndex = 23;
             // 
             // InputForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(877, 488);
+            this.Controls.Add(this.txtId);
+            this.Controls.Add(this.txtUpdate);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtGender);
             this.Controls.Add(this.label6);
@@ -212,5 +235,7 @@
         private TextBox txtGender;
         private Label label6;
         private DataGridView dataGridView1;
+        private Button txtUpdate;
+        private TextBox txtId;
     }
 }

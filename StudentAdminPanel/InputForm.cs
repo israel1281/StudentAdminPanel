@@ -89,7 +89,7 @@ namespace StudentAdminPanel
                     MessageBoxIcon.None
                 );
 
-                readData();
+                ReadData();
 
                 txtFullname.Text = "";
                 txtMatricNumber.Text = "";
@@ -100,7 +100,7 @@ namespace StudentAdminPanel
             }
         }
 
-        public void readData()
+        public void ReadData()
         {
             List<Students> list = collection.AsQueryable().ToList();
             dataGridView1.DataSource = list;
@@ -110,6 +110,47 @@ namespace StudentAdminPanel
             txtAge.Text = dataGridView1.Rows[0].Cells[3].Value.ToString();
             txtGender.Text = dataGridView1.Rows[0].Cells[4].Value.ToString();
             txtGpa.Text = dataGridView1.Rows[0].Cells[5].Value.ToString();
+        }
+
+        private void txtUpdate_Click(object sender, EventArgs e)
+        {
+            Students student = new Students(
+                    txtFullname.Text,
+                    txtMatricNumber.Text,
+                    txtStateOfOrigin.Text,
+                    txtAge.Text,
+                    txtGender.Text,
+                    txtGpa.Text
+                );
+            var update = Builders<Students>.Update
+                .Set("Fullname", txtFullname.Text)
+                .Set("MatricNumber", txtMatricNumber.Text)
+                .Set("StateOfOrigin", txtStateOfOrigin.Text)
+                .Set("Age", txtAge.Text)
+                .Set("Gender", txtGender.Text)
+                .Set("Gpa", txtGpa.Text);
+
+            collection.UpdateOne(st => st.Id == ObjectId.Parse(txtId.Text), update); 
+
+            ReadData();
+
+            txtFullname.Text = "";
+            txtMatricNumber.Text = "";
+            txtStateOfOrigin.Text = "";
+            txtAge.Text = "";
+            txtGender.Text = "";
+            txtGpa.Text = "";
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtId.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+            txtFullname.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+            txtMatricNumber.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+            txtStateOfOrigin.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+            txtAge.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+            txtGender.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
+            txtGpa.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
         }
     }
 }
